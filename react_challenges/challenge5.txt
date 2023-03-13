@@ -1,0 +1,24 @@
+Create a Input component that will render a <input /> element with the following specifications:
+
+It should render the following HTML:
+<label class="label">
+  Text box name here
+  <span class="input-required">*</span>
+  <div>
+    <input type="text" placeholder="Text box name here" />
+  </div>
+</label>
+
+Replace 'Text box name here' (both entries) with the placeholder prop that the <Input /> component receives.
+
+It should default to type="text" when the user does not provide a type prop. So <Input /> would render an <input type="text" /> and <Input type="email" /> would render an <input type="email" />.
+
+The <input /> should always have the class input but can also be extended with whatever class the user provides.
+Create the .input class in your css to test this out.
+
+The <span class="input-required">*</span> should only be rendered when the <Input /> receives a required prop.
+Create the .input-required class in your css to test this out.
+
+When the <Input /> receives a required prop, it should render <input required />
+
+The <input /> should receive all remaining props defined by the user. This will allow the onInput event to work for example. As well as disabling the input or marking it as readonly.

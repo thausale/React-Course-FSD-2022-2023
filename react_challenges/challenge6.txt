@@ -1,0 +1,13 @@
+Create a Button component that will render a <button>...</button> element with the following specifications:
+
+It should render the text it receives. <Button>Hello</Button> should render Hello in between the <button> tags.
+
+It should always have the class 'btn' which is used for giving the button its style.
+add a basic .btn class in your css.
+
+In addition to the class btn, it should als have the class "btn-outline" when the outline prop is received. Otherwise, it should have the class "btn-default". One of these classes should be added, but not both.
+create both classes in your css to check if everything works fine.
+
+The user is able to add their own classes. For example, <Button className="extra-class" /> will render <button className="btn btn-default extra-class"/>. Test this out by creating that custom class.
+
+The button should be customizable/extendable. Whatever prop the user pass should also be rendered on the <button /> element. For example (but not limited to), onClick, disabled, type, etc.
