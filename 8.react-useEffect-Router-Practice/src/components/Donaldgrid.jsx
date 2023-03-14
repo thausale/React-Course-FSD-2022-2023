@@ -13,7 +13,7 @@ const Donaldgrid = (props) => {
         data.map((donald) => {
           console.log(donald._id);
           return (
-            <Link to={`/${donald._id}`}>
+            <Link to={`/api/${donald._id}`}>
               <img src={donald.imageUrl} alt="" />;
             </Link>
           );
