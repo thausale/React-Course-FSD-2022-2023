@@ -7,7 +7,6 @@ import CocktailGrid from "../components/CocktailGrid";
 import { Link } from "react-router-dom";
 
 function App() {
-  const [input, setInput] = useState("");
   const [cocktails, setCocktails] = useState([]);
   const [searchValue, setSearchValue] = useState();
 
