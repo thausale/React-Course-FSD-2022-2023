@@ -32,15 +32,15 @@ function App() {
   }, [searchValue]);
 
   return (
-    <main className="App">
+    <>
       <Link to="/test">Go to testpage</Link>
-      <h1>Cocktail App</h1>
-      <h2>Find your favorite cocktails</h2>
+      <h2>Cocktail App</h2>
+      <h3>Find your favorite cocktails</h3>
       <Form setSearchValue={setSearchValue} getCocktails={getCocktails} />
       {searchValue && <h3>you searched for {searchValue}</h3>}
 
       <CocktailGrid cocktails={cocktails} />
-    </main>
+    </>
   );
 }
 
